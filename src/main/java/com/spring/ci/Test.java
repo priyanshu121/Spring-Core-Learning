@@ -8,7 +8,8 @@ public class Test {
 		ApplicationContext context=new ClassPathXmlApplicationContext("com/spring/ci/ciconfig.xml");
 		Person p=(Person)context.getBean("person");
 		System.out.println(p);
-		
+		Adition a=(Adition)context.getBean("add");
+		a.doSum();
 		
 	}
 

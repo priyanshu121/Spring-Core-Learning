@@ -14,12 +14,16 @@
  <constructor-arg value="android using kotlin"/>
  
  </bean>
- 
  <bean class="com.spring.ci.Person" name="person">
  <constructor-arg value="priyanshu" />
  <constructor-arg value="12"  />
  <constructor-arg ref="cer"/>
-  
+ </bean>
+ 
+ <bean class="com.spring.ci.Adition" name="add">
+ <constructor-arg value="12" type="int" index="0"/>
+ <constructor-arg value="32" type="int" index="1"/>
+ 
  
  </bean>
  	
